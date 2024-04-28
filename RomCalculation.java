@@ -4,7 +4,7 @@ class RomCalculation {
     static int correctFirstPoma = 0;
     static int correctSecondPoma = 0;
     static int result = 0;
-    public static void calculateRomanNumbers(String inputOne,String arifmeticOperation,String inputTwo) throws Exception {
+    static void calculateRomanNumbers(String inputOne,String arifmeticOperation,String inputTwo) throws Exception {
         //Основной метод по запуску парсинга и вычисления итогового значения римских символов
         searchFirstNumberPom(inputOne);
         searchSecondNumberPom(inputTwo);
