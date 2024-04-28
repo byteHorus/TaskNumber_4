@@ -5,7 +5,7 @@ class ArabicNumbersCalculation {
             switch (arifmeticOperation) {
                 case "-":
                     result = numberOne - numberTwo;
-                    System.out.print( result);
+                    System.out.print(result);
                     break;
                 case "+":
                     result = numberOne + numberTwo;
