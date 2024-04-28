@@ -1,3 +1,6 @@
+package src;
+
+import src.RomaNumberEnum;
 
 class RomCalculation {
     //Класс получения/ обработки и вычисления римских символов
