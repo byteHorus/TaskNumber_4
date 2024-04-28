@@ -26,7 +26,7 @@ class ReadingData {
             // Переход -> к выполнению вычислений для Римских символов
             RomCalculation.calculateRomanNumbers(inputOne,arifmeticOperation,inputTwo);
         }else{
-            throw new Exception("Invalid numeral");
+            throw new Exception("Different number systems are used");
             // В случае если используются разные системы счислений
         }
     }

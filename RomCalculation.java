@@ -39,25 +39,25 @@ class RomCalculation {
             case "-":
                 result = correctFirstPoma - correctSecondPoma;
                 if (result <= 0){
-                    throw new Exception("Invalid numeral");
+                    throw new Exception("invalid operation, Roman numbers cannot be negative");
                 }
                 break;
             case "+":
                 result = correctFirstPoma + correctSecondPoma;
                 if (result <= 0){
-                    throw new Exception("Invalid numeral");
+                    throw new Exception("invalid operation, Roman numbers cannot be negative");
                 }
                 break;
             case "/":
                 result = correctFirstPoma / correctSecondPoma;
                 if (result <= 0){
-                    throw new Exception("Invalid numeral");
+                    throw new Exception("invalid operation, Roman numbers cannot be negative");
                 }
                 break;
             case "*":
                 result = correctFirstPoma * correctSecondPoma;
                 if (result <= 0){
-                    throw new Exception("Invalid numeral");
+                    throw new Exception("invalid operation, Roman numbers cannot be negative");
                 }
                 break;
         }
