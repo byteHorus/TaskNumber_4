@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class ReadingData {
+class ReadingData {
     //Класс получения и обработки вводимых значений
-    public static void toGetData() throws Exception {
+    static void toGetData() throws Exception {
         Scanner src = new Scanner(System.in);
         // Ввод первого элемента
         String inputOne = src.next();
@@ -31,7 +31,7 @@ public class ReadingData {
         }
     }
     // Метод для проверки, сможем ли мы входящее значение пребразовать в число
-    public static boolean isNumeric(String stringNum) {
+    static boolean isNumeric(String stringNum) {
         try {
             int number = Integer.parseInt(stringNum);
         } catch (NumberFormatException e) {
@@ -40,7 +40,7 @@ public class ReadingData {
         return true;
     }
     //Метод проверки Римских символов в диапазоне от 1 до 10
-    public static boolean isRomanNumber(String numberRom) {
+    static boolean isRomanNumber(String numberRom) {
         boolean logicResult = false;
         String[] array = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"};
         for (int a = 0; a < array.length; a++) {

@@ -1,5 +1,5 @@
 
-public class RomCalculation {
+class RomCalculation {
     //Класс получения/ обработки и вычисления римских символов
     static int correctFirstPoma = 0;
     static int correctSecondPoma = 0;
@@ -12,7 +12,7 @@ public class RomCalculation {
         parseIntResultCalculating(result);
 
     }
-    public static int searchFirstNumberPom(String inputOne) throws Exception {
+    static int searchFirstNumberPom(String inputOne) throws Exception {
         //Парсим первое значение inputOne
         RomaNumberEnum[] romaNumberEnum = RomaNumberEnum.values();
         for(int a = 0; a < romaNumberEnum.length; a ++){
@@ -22,7 +22,7 @@ public class RomCalculation {
         }
         return correctFirstPoma;
     }
-    public static int searchSecondNumberPom(String inputTwo) throws Exception {
+    static int searchSecondNumberPom(String inputTwo) throws Exception {
         //Парсим второе значение inputTwo
         RomaNumberEnum[] romaNumberEnum = RomaNumberEnum.values();
         for(int a = 0; a < romaNumberEnum.length; a ++){
@@ -33,7 +33,7 @@ public class RomCalculation {
         return correctSecondPoma;
     }
 
-    public static int calculationPomNumber(int correctFirstPoma, String arifmeticOperation, int correctSecondPoma) throws Exception{
+    static int calculationPomNumber(int correctFirstPoma, String arifmeticOperation, int correctSecondPoma) throws Exception{
         //После того, как распарсили римские числа, получили арабские, производим арифметические операции с ними
         switch (arifmeticOperation){
             case "-":
@@ -63,7 +63,7 @@ public class RomCalculation {
         }
         return result;
     }
-    public static void parseIntResultCalculating(int result){
+    static void parseIntResultCalculating(int result){
         //После выполнения арифметических действий, ищем результат в enum и показываем его
         String resultRomNumber;
         RomaNumberEnum [] romaNumberEnum = RomaNumberEnum.values();
