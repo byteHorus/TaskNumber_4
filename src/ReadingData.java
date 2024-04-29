@@ -21,7 +21,7 @@ class ReadingData {
         if (isNumeric(inputTwo)) {
             numberTwo = Integer.parseInt(inputTwo);
         }
-        // Переход к выполнению вычислений для Арабских символов
+        // Переход -> к выполнению вычислений для Арабских символов
         if (isNumeric(inputTwo) && isNumeric(inputOne) && arifmeticOperation != null) {
             ArabicNumbersCalculation.computationsArabic(numberOne, arifmeticOperation, numberTwo);
         } else if (isRomanNumber(inputTwo) && isRomanNumber(inputOne)) {
