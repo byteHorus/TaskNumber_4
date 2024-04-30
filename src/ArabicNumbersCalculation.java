@@ -1,7 +1,8 @@
 package src;
 
 class ArabicNumbersCalculation {
-    static void computationsArabic(int numberOne, String arifmeticOperation, int numberTwo) throws Exception {            //Основной метод расчета Арабских чисел
+    static void computationsArabic(int numberOne, String arifmeticOperation, int numberTwo) throws Exception {
+        //Основной метод расчета Арабских чисел
         if (numberOne <= 10 && numberTwo <= 10) {
             int result;
             switch (arifmeticOperation) {
